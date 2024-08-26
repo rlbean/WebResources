@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .accordion {
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+  
+    .accordion-header {
+      background-color: #ddd;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+  
+    .accordion-content {
+      padding: 10px;
+      display: none; /*hides drop down*/
+    }
+  
+    .accordion.active .accordion-content {
+      display: block; /* switching from none to block allows us to hide and show this stuff*/
+    }
+  
+    .accordion img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }

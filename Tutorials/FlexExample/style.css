@@ -1,0 +1,20 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .item {
+      background-color: lightseagreen;
+      margin: 5px;
+      padding: 10px;
+      min-width: 10px;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: around;
+      /*flex-flow: row wrap; */
+      /*flex-direction: column;*/
+      /*flex-wrap: wrap;*/
+  }
+  

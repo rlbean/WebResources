@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Operations</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/d46cf1696a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Bean's Math Calculator</h1>
+        <div class="container">
+            <div>
+                <div id="resContainer" class="bgOutput">
+                    <p id="results" class="txtOutput">0</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="btnNum" onclick="myFunction('C')">
+                    Clear
+                </div>
+                <div class="btnNum" onclick="bckspace()">
+                    <i class="fa-solid fa-delete-left"></i>
+                </div>
+                <div class="btnNum" onclick="myFunction(`(`)">
+                    (
+                </div>
+                <div class="btnNum" onclick="myFunction(`)`)">
+                    )
+                </div>
+            </div>
+            <div class="row">
+                <div class="btnNum" onclick="myFunction('7')">
+                    7
+                </div>
+                <div class="btnNum" onclick="myFunction('8')">
+                    8
+                </div>
+                <div class="btnNum" onclick="myFunction('9')">
+                    9
+                </div>
+                <div class="btnNum" onclick="myFunction('/')">
+                    &divide;
+                </div>
+            </div>
+            <div class="row">
+                <div class="btnNum" onclick="myFunction('4')">
+                    4
+                </div>
+                <div class="btnNum" onclick="myFunction('5')">
+                    5
+                </div>
+                <div class="btnNum" onclick="myFunction('6')">
+                    6
+                </div>
+                <div class="btnNum" onclick="myFunction('*')">
+                    X
+                </div>
+            </div>
+            <div class="row">
+                <div class="btnNum" onclick="myFunction('1')">
+                    1
+                </div>
+                <div class="btnNum" onclick="myFunction('2')">
+                    2
+                </div>
+                <div class="btnNum" onclick="myFunction('3')">
+                    3
+                </div>
+                <div class="btnNum" onclick="myFunction('-')">
+                    -
+                </div>
+            </div>
+            <div class="row">
+                <div class="btnNum" onclick="myFunction('0')">
+                    0
+                </div>
+                <div class="btnNum" onclick="myFunction('.')">
+                    .
+                </div>
+                <div class="btnNum" onclick="myFunction('=')">
+                    =
+                </div>
+                <div class="btnNum" onclick="myFunction('+')">
+                    +
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

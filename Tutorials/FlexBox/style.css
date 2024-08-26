@@ -1,0 +1,22 @@
+.item {
+    border: 1px solid;
+}
+
+.item1 {
+    background-color: lightseagreen;
+}
+.item2 {
+    background-color: coral;
+}
+
+p {
+    border: 1px solid black;
+    display: inline;
+    margin: 20px 200px 20px 20px;
+}
+
+div {
+    border: 1px solid black;
+    display: inline;
+    
+}

@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 400px;
+    /* adjust the width as needed */
+    height: 400px;
+    /* adjust the height as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container img:first-child {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+}
+
+.image-container img:last-child {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+    opacity: 1;
+}
+
+
+.container:hover .image-container img:first-child {
+    opacity: 1;
+    clip-path: none;
+}
+
+.container:hover .image-container img:last-child {
+    opacity: 0;
+
+}

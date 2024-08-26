@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+header {
+    background-color: rgb(199,268,245);
+}
+nav ul {
+    list-style-type: none;
+}
+nav li {
+    display:inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.item1 {
+    background-color: darkcyan;
+    
+}
+
+.item2 {
+    background-color: coral;
+    
+}
+.item3 {
+    background-color: #93F2EE;
+}
+
+.items {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black; 
+    display: inline-block;
+    width: 28%;
+}
+
+footer {
+    background-color: darkgray;
+}
