@@ -1,0 +1,173 @@
+/* Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* makes the size of the box include the margin and padding*/
+    text-decoration: none; 
+    outline: none; 
+    font-family: "Poppins", sans-serif;
+  }
+
+  html {
+    font-size: 62.5%; /* 16px = 1rem */
+  }
+  /* End of Default Styles */
+
+  /* Container */
+  .container {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  /* Navigation */
+.navbar {
+    width: 100%;
+    height: 10rem;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.1rem solid rgb(0, 0, 0);
+    z-index: 300;
+    /*makes it appear on top of everything else */
+    transition: all 0.5s;
+}
+
+.outerlogo {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /*mouse over */
+}
+
+.logo i {
+    font-size: 4rem;
+    color: transparent;
+    margin-right: 1rem;
+}
+
+/* pushes the text in the logo to 2 rows - remove if you want on 1 line. */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*targets upper text -- name -- 1st one*/
+.logo-text span:nth-child(1) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #000;
+}
+
+/*targets second text in the logo */
+.logo-text span:nth-child(2) {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #000;
+    margin-top: -0.7rem;
+}
+
+.navigation a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 3rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    padding: 1rem;
+    background-color: #ffc107;
+}
+
+.searchbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchTop {
+    background-color: lightblue;
+    padding: 1rem;
+}
+
+/* targets the text box for search bar */
+.searchTop>input {
+    width: 45rem;
+}
+
+
+/* End of Navigation */
+
+
+/* --- Main Content --- */
+
+main {
+    padding: 2rem; /* drops it down from the top a bit */
+}
+
+/* --- Image Slider --- */
+  .slider-wrapper {
+    position: relative; 
+    width: 100%; /* makes it the full page width */
+   /* max-width: 96rem; /* sets max width to 960px -- */
+    margin: 0 auto; /* centers the elements horizontally */
+
+  }
+
+  .slider {
+    display: flex;
+    aspect-ratio: 16 / 9; /* maintains the aspect ratio -- make sure pics are in this ratio */
+    overflow-x: auto; /* allows horizontal scrolling if there is overflow */
+    scroll-snap-type: x mandatory; /* makes the scrolling snap to the images */
+    scroll-behavior: smooth;
+    box-shadow: 0 6px 8px rgba(0,0,0, 0.75); /*image drop shadow */
+    overflow: hidden; /* hides overflow content including scrollbar */
+  }
+
+.slider img {
+    flex-direction: 1 0 100%; /* ***** */
+    scroll-snap-align: start; /* snaps image to the start of the container */
+    object-fit: cover; /* image covers entire area */
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem; /* gap between buttons */
+    position: absolute; 
+    bottom: 1.25rem; /* moves buttons up from bottom of the slider images */
+    left: 50%; /* centers the buttons in the slide images */
+    transform: translate(-50%); /* movement transition*/
+    z-index: 1; /* above all other content */
+}
+
+.slider-nav a {
+    width: 1.5rem; /* button sizing */
+    height: 1.5rem;
+    border-radius: 50%; /* makes buttons into circles - remove this they are squares */
+    background-color: #fff;
+    opacity: 0.5; /* fades the opacity of the button until we hover */
+    box-shadow: 0 6px 8px rgba(0,0,0, 0.75);
+    transition: opacity ease 250ms; /* hover transition */
+}
+
+.slider-nav a:hover {
+    opacity: 1; /* change from 50% to 100% visible */
+}
+/* --- End of Image Slider --- */
+
