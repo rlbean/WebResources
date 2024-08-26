@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  Hello world
+  <script src="script.js"></script>
+  <div style="display: flex; align-items: center; justify-content: center; height: 100vh">
+   <div id="myCanvas"></div>
+  </div>
+  <canvas id="snowman" width="200" height="200"></canvas>
+
+<script>
+  // get the canvas element
+  var canvas = document.getElementById('snowman');
+
+  // get the drawing context
+  var ctx = canvas.getContext('2d');
+
+  // draw the snowman's body
+  ctx.beginPath();
+  ctx.arc(100, 100, 80, 0, 2 * Math.PI); // x, y, radius, start angle, end angle
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+  // draw the snowman's head
+  ctx.beginPath();
+  ctx.arc(100, 60, 40, 0, 2 * Math.PI);
+  ctx.fill();
+
+  // draw the snowman's eyes
+  ctx.beginPath();
+  ctx.arc(85, 55, 5, 0, 2 * Math.PI);
+  ctx.arc(115, 55, 5, 0, 2 * Math.PI);
+  ctx.fillStyle = "black";
+  ctx.fill();
+
+  // draw the snowman's nose
+  //ctx.begin
+</script>
+
+
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

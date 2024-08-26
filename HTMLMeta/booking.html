@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Little Lemon</title>
+        <meta name="description" content="A brief description">
+        <meta name="author" content="your Site Name">
+
+        <!-- Open Graph Protocol -->
+        
+            <meta property="og:title" content="Our Menu" />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content="images/logo.png">
+            <meta property="og:url" content="https://littlelemon">
+            <meta property="og:description" content="Little Lemon is a family owned Mediterranean restaurant focused on traditional recipes served with a modern twist." />
+            <meta content="og:locale" content="en_US">
+            <meta content="og:site_name" content="Little Lemon">
+            
+                    <!-- Include your CSS files here -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <!-- Add you website name or logo here-->
+            <img src="images/logo.png">
+        </header>
+        <nav>
+            <!-- Add your website navigation here -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href=blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Add your main content here -->
+            <h1>Book a Table</h1>
+            <form method="POST">
+                <div>
+                    <label for="booking_date">Booking Date</label>
+                    <input type="date" id="booking_date" name="booking_date" />
+                </div>
+                <div>
+                    <label for="booking_people">Number of People</label>
+                    <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4"  oninput="this.nextElementSibling.value = this.value" />
+                    <output>4</output>
+                </div>
+                <div>
+                    <label for="booking_location">Location</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option value="Downtown"></option>
+                        <option value="Uptown"></option>
+                    </datalist>
+                </div>
+                <div></div>
+                <button type="submit">Book Table</button>
+            </form>
+        </main>
+        <footer>
+            <!-- Add your copyright notices and other footer content here -->
+            <p>Footer</p>
+        </footer>
+        <!-- Include your JavaScript files here -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

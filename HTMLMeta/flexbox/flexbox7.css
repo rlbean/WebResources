@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* reset the basic alignment options*/
+    box-sizing: border-box;
+}
+
+img{
+    border: 0;
+}
+
+.container{
+    display: flex;
+    /* wrap over multiple lines */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.item{
+    margin: 5px;
+}

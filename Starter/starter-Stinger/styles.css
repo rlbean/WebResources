@@ -1,0 +1,63 @@
+/*-------HEADER-------*/
+
+header {
+    display: block;
+    background-color: lightblue;
+    
+}
+
+nav {
+    display: block;
+    background-color: lightyellow;
+    padding: 10px;
+    text-align:center;
+}
+ul {
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    display:inline-block;
+    background-color: red;
+    padding:10px;
+    margin-right: 20px;
+}
+li:hover {
+    background-color: yellow;
+  }
+
+/* selected link */
+li:active {
+    background-color: green;
+}
+
+#search {
+    padding: 50px;
+}
+/*--------BODY--------*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+section {
+    background-color: lightgray;
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+}
+
+
+.triple {
+    background-color:darkseagreen;
+    margin: auto;
+}
+
+
+/*--------FOOTER--------*/
+footer {
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 20px;
+}
