@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    background-color: lightsalmon;
+}
+
+/* ------- Grid Fractions --------- */
+.gridFraction {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.gridFraction>div {
+    background-color: beige;
+}
+
+/* ------- END OF Grid Fractions --------- */
+
+/* ---- Grid 30-70 ---- */
+.grid30-70 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /*grid-column-gap: 1em;
+    grid-row-gap: 1em;*/
+    grid-gap: 1em;
+}
+
+.grid30-70>div {
+    background-color: lightblue;
+    padding: 10px;
+
+}
+
+
+/* ---- END OF Grid 30-70 ---- */
