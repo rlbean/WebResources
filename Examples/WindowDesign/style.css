@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* center on screen */
+    padding: 10px;
+}
+
+.window {
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    /* offset is nothing so that it appears right behind */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);*/
+}
+
+.title-bar {
+    background: linear-gradient(to bottom, #0078d7, #005ea6);
+    color: #fff;
+    /*window title white text */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* centers vertically white text */
+}
+
+.title-bar-controls {
+    display: flex;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+.content {
+    padding: 10px;
+}
+
+.window {
+    border: 1px solid #ccc;
+}
+
+/* x image */
+.icon {
+    width: 20px;
+    height: 20px;
+}

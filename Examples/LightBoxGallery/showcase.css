@@ -1,0 +1,95 @@
+/* Default Styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* includes padding, border, etc in sizing */
+    text-decoration: none;
+    /* removes underline from link*/
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+    /* makes the default size of 1rem = 10px instead of the usual 16px*/
+    background-color: rgb(255, 255, 154) ;
+    /*height: 100em; don't need*/
+}
+
+/* End of Default Styles */
+
+/* Container -- holding all page content*/
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10rem;
+}
+
+/* Navigation */
+.navbar {
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    background-color: #2A76AC;
+    top: 0;
+    left: 0;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 0.5rem solid #673D0D;
+    z-index: 300;
+    /*makes it appear on top of everything else */
+    transition: all 0.5s;
+}
+
+.navigation a {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #ffec73;
+    margin-right: 3rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    /* space between the letters */
+    position: relative;
+    transition: all 0.5s;
+}
+
+.navigation a:hover {
+    padding: 1rem;
+    color: red;
+      background-color: #3591d3;  
+
+    transition-property: all;
+    transition-duration: 5s;
+    transition-delay: 2s; 
+    transition: ease-in;
+                                                                                       
+}
+
+/* ---- Gallery CSS ---- */
+.gallery-wrapper {
+  width: 100%;
+    min-height: 100vh;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    padding:50px 8%;
+}
+
+  /* what you edit to change your gallery grid layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.gallery img {
+  width:100%;
+}
+
+/* ---- Gallery CSS ---- */

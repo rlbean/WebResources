@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*makes the sizing consistent - includes the padding and margin in the sizing */
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    scroll-snap-type: y mandatory; /* vertical scrolling - always snaps to the nearest snap point -- next section*/
+    overflow-y: scroll;
+    height:100vh; /* sets the scroll height to the full view height */
+}
+
+
+section {
+    height: 100vh; /*makes each section the full page*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start; /* aligns the top of the section to the top of the viewport when scrolling */
+}
+
+h1 {
+    color: rgb(226,226,226);
+    /* drop shadow -- horizontal offset - vertical offset, blur radius, colour */
+    text-shadow: 1px 1px 4px #000,
+}
+
+.one {
+    background-color: rgb(36,164,138);
+
+}
+
+.two {
+    background-color: rgb(211,79,79);
+
+}
+
+.three {
+    background-color: rgb(67,91,175);
+
+}
+
+.four {
+    background-color: rgb(191,64,191);
+
+}
+
+.edgeNav-wrapper {
+    height: 100%;
+    width: 5rem;
+    top:0;
+    left:0;
+    position: absolute;
+
+}
+
+.edgeNav {
+    background-color: white;
+    margin-left:2rem;
+    width: 3rem;
+    height: 100%;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column; /* Make sure children stack vertically */
+    justify-content: space-between; /* Add space between children */
+    align-items: center;
+}
+
+.topNum {
+    padding-top:1rem;
+    width:100%;
+    text-align: center;
+    align-self: start; 
+    line-height: 0.8em;  
+}
+
+.bottomNum {
+    padding-bottom:1rem;
+    width:100%;
+    text-align: center;
+    line-height: 1;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="showcase.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="gallery-title">
+            <h2>Image Modal</h2>
+        </div>
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <!---Images go in here -->
+                <!---data-lightbox = a way to group the images as a gallery -- all have to contain the same name-->
+                <a href="images/dog.jpg" data-lightbox="dogs" data-title="Caption1"><img src="images/dog.jpg"></a>
+                <a href="images/dog2.jpg" data-lightbox="dogs" data-title="Caption2"><img src="images/dog2.jpg"></a>
+                <a href="images/dog3.jpg" data-lightbox="dogs" data-title="Caption3"><img src="images/dog3.jpg"></a>
+                <!---End of Images -->
+            </div>
+        </div>
+    </div>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
