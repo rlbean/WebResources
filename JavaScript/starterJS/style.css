@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+      font-family: "helvetica neue", HelveticaNeue, helvetica, sans-serif;
+  }
+  
+  h1 {
+      font-size: 4rem;
+      border-bottom: 1px solid #888;
+      margin-bottom: 0.5em;
+      padding-bottom: 0.5em;
+      text-align: center;
+  }
+  

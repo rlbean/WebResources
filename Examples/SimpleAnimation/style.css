@@ -1,0 +1,17 @@
+.parent {
+    background-color: hsla(200,100%,20%);
+    height: 400px;
+    width: 400px;
+}
+
+.child {
+    background-color: red;
+    height: 50%;
+    width: 50%;
+}
+
+.parent:hover .child {
+    transform: translateX(100%);
+}
+
+/*--https://youtu.be/YszONjKpgg4--*/

@@ -1,0 +1,112 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #91E0FF;
+    background-image: url(images/cute-cartoon-blue-sky-with-cloud-and-sun-background-wallpaper-free-vector.jpg);
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #bd7e4a;
+    padding: 20px 20px;
+    display: block;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  
+  .topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  
+  .topnav a:hover {
+    background-color: gray;
+    color: black;
+  }
+  
+  .topnav .search-container {
+    float: right;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+  
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+  
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+  
+  .content {
+    background-color: #bd7e4a;
+    padding: 20px 20px;
+    display: block;
+    padding-bottom: 10px;
+    border-radius: 10%;
+  }
+  
+  .definition1 {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    display: block;
+    padding-bottom: 10px;
+    border-radius: 10%;
+  }
+  
+  .definition1 img {
+    float: left;
+  }
+  
+  .footer {
+    background-color: #624228;
+    color: white;
+    padding: 10px 10px;
+    display: block;
+  }

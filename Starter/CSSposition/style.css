@@ -1,0 +1,25 @@
+.parent {
+    border: 1px solid black;
+    padding: .25rem;
+    margin: .25rem;
+}    
+
+.child {
+    padding: .25rem;
+}
+
+.child-1 {
+    background-color: lightblue;
+}
+
+.child-2 {
+    background-color: lightcoral;
+}
+
+.child-3 {
+    background-color: lightgreen;
+}
+
+.child-4 {
+    background-color: lightsalmon;
+}
