@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — IDM Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav>
+    <!-- STUDENT: Change "Your Name" to your name -->
+    <a href="#" class="nav-name">Your Name</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <div class="hero">
+    <div class="hero-inner">
+      <!-- STUDENT: Change "IDM — Tec-Voc High School" if needed -->
+      <p class="hero-label">IDM — Tec-Voc High School</p>
+
+      <!-- STUDENT: Change the headline. Keep the <em> tag on one word for the italic gold effect -->
+      <h1>Telling stories<br>through <em>motion</em><br>and light.</h1>
+
+      <!-- STUDENT: Write 2–3 sentences about yourself and what you create -->
+      <p class="hero-bio">
+        I'm a Interactive Digital Media student with a passion for video game creation,
+        animation, and visual storytelling. Here's a selection of my work.
+      </p>
+
+      <a href="#work" class="hero-cta">
+        View My Work
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-label">01</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <!-- STUDENT: Replace these paragraphs with your own bio -->
+        <p>
+          I'm currently in the Interactive Digital Media program at Tec-Voc High School in Winnipeg, where I work on video games, 3D modeling, 2D artwork, and animations.
+        </p>
+        <p>
+          Outside of class I'm interested in video games and sound design.
+          I'm looking for opportunities to work with industry professionals and grow
+          my skills in a real game development environment.
+        </p>
+      </div>
+      <div class="reveal">
+        <p style="font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem;">Skills &amp; Tools</p>
+        <!-- STUDENT: Edit this list to match your actual skills -->
+        <ul class="skills-list">
+          <li>Adobe Photoshop</li>
+          <li>ToonBoom Harmony</li>
+          <li>Blender</li>
+          <li>Unity & C#</li>
+          <li>HTML/CSS and Simple JavaScript</li>
+          <li>Unreal Engine</li>
+          <li>Game Design/Development</li>
+          <li>Project Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORK ========== -->
+  <section id="work">
+    <div class="section-header reveal">
+      <span class="section-label">02</span>
+      <h2 class="section-title">Selected Work</h2>
+    </div>
+    <div class="work-grid">
+
+      <!-- =============================================
+           STUDENT: Duplicate a .project-card block
+           below to add more projects.
+           For each card:
+           - Change the background-color in style="" to:
+             background-image: url('your-image.jpg')
+           - Update the type, title, and description
+      ============================================= -->
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background-color:#1A1A1A;">
+          Add image here
+        </div>
+        <div class="project-info">
+          <p class="project-type">Simple 2D Platformer Game</p>
+          <h3 class="project-title">Project Title Here</h3>
+          <p class="project-desc">Brief description of what this project is, what your role was, and what tools you used.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background-color:#1E1A18;">
+          Add image here
+        </div>
+        <div class="project-info">
+          <p class="project-type">3D Model</p>
+          <h3 class="project-title">Project Title Here</h3>
+          <p class="project-desc">Brief description of what this project is, what your role was, and what tools you used.</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background-color:#181A1E;">
+          Add image here
+        </div>
+        <div class="project-info">
+          <p class="project-type">Animation</p>
+          <h3 class="project-title">Project Title Here</h3>
+          <p class="project-desc">Brief description of what this project is, what your role was, and what tools you used.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-header reveal" style="justify-content:center;">
+        <span class="section-label">03</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <!-- STUDENT: Update this text -->
+      <p class="reveal">
+        I'm open to industry placements, collaborative projects, and feedback on my work.
+        Feel free to reach out.
+      </p>
+      <div class="contact-links reveal">
+        <!-- STUDENT: Replace the href values with your actual links/email -->
+        <a href="mailto:youremail@example.com" class="contact-link">Email Me</a>
+        <a href="https://vimeo.com/" target="_blank" class="contact-link">Vimeo</a>
+        <a href="https://www.linkedin.com/" target="_blank" class="contact-link">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <!-- STUDENT: Update your name and year -->
+    &copy; 2026 Your Name &mdash; IDM, Tec-Voc High School
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
